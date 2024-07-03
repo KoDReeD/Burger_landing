@@ -6,6 +6,7 @@
   --background: #1c1c1c;
   --white: #fff;
   --gray: #312f30;
+  --skelet-gray: #292629;
   --orange: #f6762c;
 }
 
@@ -67,6 +68,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   margin: 0;
 }
+
+.btn--small {
+  width: 140px;
+  height: 40px;
+  font-size: 12px;
+}
+
 
 img {
   max-width: 100%;
@@ -237,7 +245,7 @@ img {
   
 }
 
-.order__old-price {
+.order__price--old {
   font-weight: 500;
   color: var(--orange);
   letter-spacing: 0.1em;
@@ -245,10 +253,85 @@ img {
   opacity: 0.5;
 }
 
-.order__price + .order__old-price {
+.order__price + .order__price--old {
   margin-left: 3px;
 }
 
 .order .btn {
   margin-top: 10px;
+}
+
+/* Products секция */
+
+.product {
+  padding: 150px 0;
+}
+
+.product .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.product__card {
+  box-sizing: border-box;
+  width: 555px;
+  min-height: 300px;
+  padding: 60px 25px 60px 290px;
+  background-color: var(--skelet-gray);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Для чётных элементов */
+.product__card:nth-child(even) {
+  padding-left: 25px;
+  padding-right: 290px;
+}
+
+.product__title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.product_desc {
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.product__price {
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--orange);
+}
+
+.product__price + .product__price {
+  margin-left: 5px;
+}
+
+.product__price--old {
+  text-decoration-line: line-through;
+  opacity: 0.5;
+}
+
+.product .btn {
+  margin-top: 10px;
+}
+
+.card-queen {
+  background-image: url("./images/product-1.jpg");
+}
+
+.card-pizza {
+  background-image: url("./images/product-2.jpg");
+}
+
+.card-burger {
+  background-image: url("./images/product-3.jpg");
+}
+
+.card-john {
+  background-image: url("./images/product-4.jpg");
 }
