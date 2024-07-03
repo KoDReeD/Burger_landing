@@ -5,7 +5,7 @@
 :root{
   --background: #1c1c1c;
   --white: #fff;
-  --gray: #312F30;
+  --gray: #312f30;
   --orange: #f6762c;
 }
 
@@ -17,7 +17,9 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  /* Учитывается border и padding */
+  box-sizing: border-box;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -187,7 +189,66 @@ img {
   font-style: 20px;
   margin-bottom: 13px;
 }
+
 .fool-list__desc {
   font-style: 16px;
   opacity: 0.7;
+}
+
+/* Order секция */
+
+.order {
+  background: var(--gray);
+  padding: 60px 0; 
+}
+
+.order .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 90px;
+}
+
+.order__img {
+  max-width: 470px;
+
+}
+
+.order__text {
+  max-width: 360px;
+}
+
+.order__title {
+  font-size: 44px;
+  margin-bottom: 25px;
+}
+
+.order__desc {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+.order__price {
+  font-weight: 500;
+  color: var(--orange);
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  
+}
+
+.order__old-price {
+  font-weight: 500;
+  color: var(--orange);
+  letter-spacing: 0.1em;
+  text-decoration-line: line-through;
+  opacity: 0.5;
+}
+
+.order__price + .order__old-price {
+  margin-left: 3px;
+}
+
+.order .btn {
+  margin-top: 10px;
 }
