@@ -401,3 +401,98 @@ img {
   font-weight: 500;
   font-size: 40px;
 }
+
+/* footer */
+
+.footer {
+  padding: 120px 0;
+}
+
+.footer a {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer .container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer__logo {
+  /* строчно блочный */
+  display: inline-block;
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  gap:  5px;
+}
+
+.footer__link + .footer__link {
+  margin-top: 10px;
+}
+
+.footer__link::before {
+  height: 12px;
+  width: 12px;
+}
+
+.footer__link-mail::before {
+  content: url(./images/icons/global.svg);
+}
+
+.footer__link-web::before {
+  content: url(./images/icons/mail.svg);
+}
+
+.footer__link-mail {
+}
+.footer__link-web {
+}
+
+.footer__nav {
+}
+
+.footer_nav-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer .footer__title {
+  /* потому что ссылки строчные */
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer__inner-list {
+}
+.footer__inner-list-item + .footer__inner-list-item {
+  margin-top: 15px;
+}
+.footer__nav-list-item-title {
+}
+.footer__socials {
+}
+.footer__socials-icons {
+
+}
+
+.footer__socilas-link + .footer__socilas-link {
+  margin-left: 7px;
+}
