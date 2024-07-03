@@ -335,3 +335,50 @@ img {
 .card-john {
   background-image: url("./images/product-4.jpg");
 }
+
+/* feedback секция */
+
+.feedback {
+  padding-bottom: 200px;
+}
+
+.feedback .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 880px;
+}
+
+.feedback__img {
+
+}
+
+.feedback__text {
+  width: 370px;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* псевдоэлемент */
+.feedback__text::before {
+  content: url("./images/icons/quote.svg");
+}
+
+.feedback__desc { 
+  opacity: 0.7;
+  margin: 30px 0;
+}
+
+.feedback__author {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.feedback__subauthor {
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.7;
+}
