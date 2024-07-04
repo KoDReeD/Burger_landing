@@ -613,7 +613,12 @@ img {
 
     .product__card {
       width: 100%;
-      padding-left: 30px;
+      padding-left: 50%;
+    }
+
+    .product__card:nth-child(even) {
+
+      padding-left: 50%;
     }
 
     /* 
@@ -748,8 +753,9 @@ img {
       text-align: center;
     }
 
-    .product.btn {
-      margin: 0 auto;
+    .product .btn {
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .product__card > * {
